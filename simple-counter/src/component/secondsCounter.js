@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
+import {Row, Col} from 'react-bootstrap';
 
 const SecondsCounter = () => {
-  const [contador, setContador] = useState(6);
-  const [contador2, setContador2] = useState(7);
-  const [contador3, setContador3] = useState(8);
-  const [contador4, setContador4] = useState(9);
-  const [contador5, setContador5] = useState(9);
-  const [contador6, setContador6] = useState(8);
+  const [contador, setContador] = useState(0);
+  const [contador2, setContador2] = useState(0);
+  const [contador3, setContador3] = useState(0);
+  const [contador4, setContador4] = useState(0);
+  const [contador5, setContador5] = useState(0);
+  const [contador6, setContador6] = useState(0);
 
   useEffect(() => {
     setInterval(() => {
@@ -38,15 +39,15 @@ const SecondsCounter = () => {
   }
 
   return (
-    <div className="App">
-      <h1>{contador}</h1>
-      <h1>{contador2}</h1>
-      <h1>{contador3}</h1>
-      <h1>{contador4}</h1>
-      <h1>{contador5}</h1>
-      <h1>{contador6}</h1>
+    <Row>
+      <Col><h1>{contador6}</h1> </Col>
+      <Col><h1>{contador5}</h1></Col>
+      <Col><h1>{contador4}</h1></Col>
+      <Col><h1>{contador3}</h1></Col>
+      <Col><h1>{contador2}</h1></Col>
+      <Col><h1>{contador}</h1></Col>
+    </Row>
       
-    </div>
   );
 };
 
