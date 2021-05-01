@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {Row, Col} from 'react-bootstrap';
 
+
 const SecondsCounter = () => {
   const [contador, setContador] = useState(0);
   const [contador2, setContador2] = useState(0);
@@ -39,7 +40,9 @@ const SecondsCounter = () => {
   }
 
   return (
+    
     <Row>
+      <Col className="reloj"><i className="far fa-clock fa-2x"/></Col>
       <Col><h1>{contador6}</h1> </Col>
       <Col><h1>{contador5}</h1></Col>
       <Col><h1>{contador4}</h1></Col>

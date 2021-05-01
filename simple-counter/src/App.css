@@ -1,0 +1,17 @@
+.container {
+  background-color: rgba(37, 37, 37);
+  margin-top: 20rem;
+  height: 5rem;
+}
+
+.col {
+  background-color: aquamarine;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reloj {
+  background-color: salmon;
+}
